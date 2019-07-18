@@ -1,0 +1,18 @@
+#+TITLE: docker
+#+DATE: 2019-07-18T11:52:47+08:00
+#+PUBLISHDATE: 2019-07-18T11:52:47+08:00
+#+DRAFT: nil
+#+TAGS: docker
+#+DESCRIPTION: Short description
+#+CATEGORIES: 工具
+* docker
+
+** docker容器和主机互相拷贝传输文件
+   1. docker->宿主机
+     #+BEGIN_SRC 
+     docker cp xxxx:/home/xxx/bbb  /tmp/
+     #+END_SRC
+   2. 宿主机>docker
+      #+BEGIN_SRC 
+      docker cp 文件 xxxx:/home/路径
+      #+END_SRC

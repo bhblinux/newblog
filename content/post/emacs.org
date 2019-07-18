@@ -4,7 +4,7 @@
 #+DRAFT: nil
 #+TAGS: emacs
 #+DESCRIPTION: Short description
-#+CATEGORIES: emacs
+#+CATEGORIES: emacs  
 
 * emacs
 
