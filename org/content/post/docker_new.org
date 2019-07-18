@@ -1,0 +1,20 @@
+#+hugo_base_dir: E:\Program Files\hugo\newblog
+#+TITLE: docker_new
+#+DATE: 2019-07-18T15:24:26+08:00
+#+PUBLISHDATE: 2019-07-18T15:24:26+08:00
+#+DRAFT: nil
+#+TAGS: docker
+#+DESCRIPTION: Short description
+#+CATEGORIES: 工具
+* docker
+
+** 文件传输
+docker容器和主机互相拷贝传输文件
+#+BEGIN_SRC 
+      docker cp 0000:/home/ /tmp/
+      #+END_SRC
+宿主到docker容器
+#+BEGIN_SRC 
+      cp /tmp/ xxx:/home/
+      #+END_SRC
+
