@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>md on LeaveIt</title>
+    <link>https://example.com/tags/md/</link>
+    <description>Recent content in md on LeaveIt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Jul 2018 12:38:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://example.com/tags/md/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Mode</title>
+      <link>https://example.com/2018/markdown-mode/</link>
+      <pubDate>Sun, 29 Jul 2018 12:38:10 +0800</pubDate>
+      
+      <guid>https://example.com/2018/markdown-mode/</guid>
+      <description> 用法 链接和图像 链接 markdown-mode
+## 文字样式 ## 斜体 加粗 内联代码 标签
+ 引用代码块 C-c C-s q
+ 1 柱脚
+ haha [return]   </description>
+    </item>
+    
+  </channel>
+</rss>

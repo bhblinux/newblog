@@ -1,61 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>LeaveIt</title>
-    <link>https://example.com/</link>
-    <description>Recent content on LeaveIt</description>
+    <title>编程 on LeaveIt</title>
+    <link>https://example.com/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on LeaveIt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2019 16:20:39 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Jul 2018 22:24:16 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>org-mode_new</title>
-      <link>https://example.com/2019/org-mode_new/</link>
-      <pubDate>Thu, 18 Jul 2019 16:20:39 +0800</pubDate>
-      
-      <guid>https://example.com/2019/org-mode_new/</guid>
-      <description>org-mode 基础操作 1. 标题 文章中的标题可以通过#+TITLE: 来设置.如
-#+TITLE: org-mode
-正文中的标题可以通过*,后面要空格,然后输入标题即可,一个*表示一级,最多10个
-2. 段落 开始新的段落需要回车两次,当你回车一次,发布时,只相当于中间有一个空格,还有一种就是需要空格的地方输入
-段落一
-段落二
-段落三
-3. 字体 粗体
-斜体
-删除线
-下划线 下标: H_2 O
-4.列表  有序列表和无序列表2钟  无序列表以&amp;rsquo;-&amp;lsquo;,&amp;rsquo;+&amp;lsquo;或者&amp;rsquo;*&amp;lsquo;开头 有序列表以&amp;rsquo;1.&amp;lsquo;,&amp;lsquo;1)&amp;lsquo;开头 描述列表用&amp;rsquo;::&amp;rsquo;  注意事项  列表符号后面都要有空格 统计别的列表缩进要相同 如果想要加入统计的列表,可以M-RET 空2行之后列表结束,如果空一行执行M-RET,实际上还是输入统计项   5. 示例  Lord of the rings
-my favorite scenes are(in this order)
- the sfdf  1111 2222  peter
- on  he makessfdf
-   列表 嵌入元数据  内容元数据</description>
-    </item>
-    
-    <item>
-      <title>xgo</title>
-      <link>https://example.com/2019/xgo/</link>
-      <pubDate>Thu, 18 Jul 2019 15:44:11 +0800</pubDate>
-      
-      <guid>https://example.com/2019/xgo/</guid>
-      <description> xgo 交叉编译 环境搭建  安装docker 下载 安装xgo镜像及编译指令 配置环境变量  1. 安装docker 平台选定为archlinux pacman -S docker
-2. 下载go 3. 安装xgo docker镜像 xgo的docker镜像是我们真正的编译环境,Github地址
- 安装xgo docker镜像,这个镜像大概5.G, docker pull karalabe/xgo-latest 安装xgo go get github.com/karalabe/xgo 启动docker docker run -i -t xog-latest /bin/bash 这里会要报错,关闭即可 连接docker容器 docker exec -it 容器的id /bin/bash 容器里面已经装好了xgo环境,直接git项目,编译即可  </description>
-    </item>
-    
-    <item>
-      <title>docker_new</title>
-      <link>https://example.com/2019/docker_new/</link>
-      <pubDate>Thu, 18 Jul 2019 15:24:26 +0800</pubDate>
-      
-      <guid>https://example.com/2019/docker_new/</guid>
-      <description> docker 文件传输 docker容器和主机互相拷贝传输文件
-docker cp 0000:/home/ /tmp/  宿主到docker容器
-cp /tmp/ xxx:/home/  </description>
-    </item>
     
     <item>
       <title>Java2</title>
@@ -64,19 +18,6 @@ cp /tmp/ xxx:/home/  </description>
       
       <guid>https://example.com/2018/java2/</guid>
       <description> java基础 代码块 构造代码块  将代码块写在类中 构造代码块优先构造方法  静态代码块 static{ } 优先构造代码块,只执行一次  </description>
-    </item>
-    
-    <item>
-      <title>Markdown Mode</title>
-      <link>https://example.com/2018/markdown-mode/</link>
-      <pubDate>Sun, 29 Jul 2018 12:38:10 +0800</pubDate>
-      
-      <guid>https://example.com/2018/markdown-mode/</guid>
-      <description> 用法 链接和图像 链接 markdown-mode
-## 文字样式 ## 斜体 加粗 内联代码 标签
- 引用代码块 C-c C-s q
- 1 柱脚
- haha [return]   </description>
     </item>
     
     <item>
@@ -101,49 +42,12 @@ String类 相关方法 构造方法
     </item>
     
     <item>
-      <title>sublime</title>
-      <link>https://example.com/2018/sublime/</link>
-      <pubDate>Tue, 19 Jun 2018 20:27:00 +0000</pubDate>
-      
-      <guid>https://example.com/2018/sublime/</guid>
-      <description>sublime ctrl+~ 复制 import urllib.request,os; pf = &amp;lsquo;Package Control.sublime-package&amp;rsquo;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &amp;lsquo;wb&amp;rsquo;).write(urllib.request.urlopen( &amp;lsquo;http://sublime.wbond.net/&#39; + pf.replace(&amp;rsquo; &amp;lsquo;,&amp;rsquo;%20&amp;rsquo;)).read())
-package control 官网推荐 import urllib.request,os,hashlib; h = &amp;lsquo;6f4c264a24d933ce70df5dedcf1dcaee&amp;rsquo; + &amp;lsquo;ebe013ee18cced0ef93d5f746d80ef60&amp;rsquo;; pf = &amp;lsquo;Package Control.sublime-package&amp;rsquo;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &amp;lsquo;http://packagecontrol.io/&#39; + pf.replace(&amp;rsquo; &amp;lsquo;, &amp;lsquo;%20&amp;rsquo;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&amp;lsquo;Error validating download (got %s instead of %s), please try manual install&amp;rsquo; % (dh, h)) if dh !</description>
-    </item>
-    
-    <item>
-      <title>Sublime2</title>
-      <link>https://example.com/2018/sublime2/</link>
-      <pubDate>Tue, 19 Jun 2018 20:36:56 +0800</pubDate>
-      
-      <guid>https://example.com/2018/sublime2/</guid>
-      <description>sublime ctrl+~ 复制 import urllib.request,os; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &#39;wb&#39;).write(urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;,&#39;%20&#39;)).read()) package control 官网推荐 import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; + &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh !</description>
-    </item>
-    
-    <item>
       <title>JSTL</title>
       <link>https://example.com/2018/jstl/</link>
       <pubDate>Fri, 25 May 2018 23:15:00 +0000</pubDate>
       
       <guid>https://example.com/2018/jstl/</guid>
       <description>定义标签 传统标签  写一个类实现tag接口 写一个tld文件,描述写好的类 在jsp页面引用tld文件并使用  简单标签  写一个类实现SimpleTag接口(继承SimpleTag接口的默认实现类SimpleTagSupport) 写一个tld文件,描述写好的类 在jsp页面中引入tld文件,就可以在jsp页面中使用自定义标签了  package com.yonyou; import java.io.IOException; import java.io.StringWriter; import javax.servlet.jsp.JspException; import javax.servlet.jsp.SkipPageException; import javax.servlet.jsp.tagext.JspFragment; import javax.servlet.jsp.tagext.SimpleTagSupport; public class demo02 extends SimpleTagSupport { @Override public void doTag() throws JspException, IOException { /* 控制标签体是否执行&amp;lt;c:if&amp;gt; //控制标签提不执行 ,什么都不做,就不执行 //控制标签执行*/ //JspFragment jspBody2 = getJspBody(); //jspBody2.invoke(getJspContext().getOut()); //jspBody2.invoke(null);//null则跟上面一样 //控制标签之后的内容是否执行 //什么在不做,标签后面的就会执行 //控制便签后面的内容不执行抛出SkipPageException异常 //throw new SkipPageException(); //控制标签体重复执行&amp;lt;c:foreach&amp;gt; //	for(int i=0;i&amp;lt;4;i++){ //	getJspBody().invoke(null); //	} // 修改标签体后输出&amp;lt;c:out&amp;gt; StringWriter stringWriter = new StringWriter(); JspFragment jspBody2 = getJspBody(); jspBody2.</description>
-    </item>
-    
-    <item>
-      <title>DBUTILs</title>
-      <link>https://example.com/2018/dbutils/</link>
-      <pubDate>Mon, 14 May 2018 21:21:00 +0000</pubDate>
-      
-      <guid>https://example.com/2018/dbutils/</guid>
-      <description>元数据  DatabaseMetaData ParameterMetaData ?generateSimpleParameterMetadata=true ResultSetMetaData  DBUtils  DbUtils QueryRunner 两行代码搞定增删改查  QueryRunner() &amp;ndash;需要控制事务时,使用这组方法 QueryRunner(DataSource ds) &amp;ndash;不需要控制事务用这组方法    import java.sql.SQLException; import org.apache.commons.dbutils.DbUtils; import org.apache.commons.dbutils.QueryRunner; import org.junit.Test; import com.mchange.v2.c3p0.ComboPooledDataSource; public class demo04 { @Test public void test01() throws SQLException{ QueryRunner runner=new QueryRunner(new ComboPooledDataSource()); runner.update(&amp;quot;update dept set deptname=? where id =?&amp;quot;, &amp;quot;bb&amp;quot;,4); } } for (User u:query ) { System.out.println(u); } } catch (SQLException e) { e.printStackTrace(); } } @Test public void test5() throws SQLException { QueryRunner queryRunner = new QueryRunner(new ComboPooledDataSource()); //返回结果及中的第一行指定列的值，单个查询 Object query = queryRunner.</description>
-    </item>
-    
-    <item>
-      <title>JDBC</title>
-      <link>https://example.com/2018/jdbc/</link>
-      <pubDate>Sat, 12 May 2018 19:57:00 +0000</pubDate>
-      
-      <guid>https://example.com/2018/jdbc/</guid>
-      <description>连接  导包 mysql-connector-java-5.1.7-bin.jar 连接高版本mysql数据库，而驱动版本比较低则需要凑单jdbcurl中加入 字符集 jdbc:mysql:///day06?characterEncoding=utf-8 方法一  package com.yonyou; import java.sql.Connection; import java.sql.Driver; import java.sql.SQLException; import java.util.Properties; import org.junit.Test; /* * jdbc数据连接 * 导包 mysql-connector-java-5.1.7-bin.jar */ public class demo01 { //连接数据url private String url=&amp;quot;jdbc:mysql://localhost:3306/day0508&amp;quot;; @Test public void test01(){ //1.创建驱动程序对象 Driver driver=null; Properties properties = new Properties(); properties.setProperty(&amp;quot;user&amp;quot;, &amp;quot;root&amp;quot;); properties.setProperty(&amp;quot;password&amp;quot;, &amp;quot;admin&amp;quot;); //2.连接数据库 try { driver=new com.mysql.jdbc.Driver(); Connection connect = driver.connect(url, properties); System.out.println(connect); } catch (SQLException e) { e.printStackTrace(); } } }   方法二  @Test public void test03(){ try { Class.</description>
     </item>
     
     <item>
@@ -316,16 +220,6 @@ int nBlue=GetBValue(nColor);
     </item>
     
     <item>
-      <title>win32资源</title>
-      <link>https://example.com/2018/win32%E8%B5%84%E6%BA%90/</link>
-      <pubDate>Sun, 22 Apr 2018 11:55:00 +0000</pubDate>
-      
-      <guid>https://example.com/2018/win32%E8%B5%84%E6%BA%90/</guid>
-      <description>资源文件 图标,光标,字符串,菜单,加速jm
-ICON 光标资源 #define _WIN32_WINNT 0x0400 //¹öÂÖÏûÏ¢±ØÐë¼ÓÔÚwindows.hÖ®Ç°¼Ó #include &amp;lt;windows.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;quot;resource.h&amp;quot; #define WM_FIRSTMSG (WM_USER+1)//×Ô¶¨ÒåÏûÏ¢ HINSTANCE g_hInst=NULL; HANDLE g_hStdOut=NULL; int g_nXPos,g_nYPos; int g_nX1Rect,g_nY1Rect; int g_nX2Rect,g_nY2Rect; void PrintLog(LPSTR pszLog){ WriteConsole(g_hStdOut,pszLog,strlen(pszLog),NULL,NULL); } void PrintLogln(LPSTR pszLog){ WriteConsole(g_hStdOut,pszLog,strlen(pszLog),NULL,NULL); WriteConsole(g_hStdOut,&amp;quot;\r\n&amp;quot;,strlen(&amp;quot;\r\n&amp;quot;),NULL,NULL); } BOOL OnSetCursor(HWND hWnd,UINT nMsg,WPARAM wParam,LPARAM lParam) { int nHitText=LOWORD(lParam); if(HTCLIENT!=nHitText){ return FALSE; } //获取窗口的客户区 RECT rcClient={0}; GetClientRect(hWnd,&amp;amp;rcClient); //获得当前光标的位置 POINT ptPos={0}; GetCursorPos(&amp;amp;ptPos); ScreenToClient(hWnd,&amp;amp;ptPos); //根据位置设置光标 HCURSOR hCursor=NULL; if(ptPos.x&amp;lt;rcClient.right/2){ if(ptPos.y&amp;lt;rcClient.bottom/2){ //左上 hCursor=LoadCursor(NULL,IDC_SIZEALL); }else{ //左下 hCursor=LoadCursor(NULL,IDC_HELP); } }else{ if(ptPos.</description>
-    </item>
-    
-    <item>
       <title>Win32菜单</title>
       <link>https://example.com/2018/win32%E5%9B%BE%E5%BD%A2/</link>
       <pubDate>Sat, 21 Apr 2018 11:37:00 +0000</pubDate>
@@ -365,47 +259,6 @@ win32消息程序 win32窗口注册 win32窗口创建 win32消息循环 GetMessa
       
       <guid>https://example.com/2018/benutils/</guid>
       <description>内省 package com.yonyou.demo01; import java.beans.BeanInfo; import java.beans.IntrospectionException; import java.beans.Introspector; import java.beans.PropertyDescriptor; import java.lang.reflect.Method; import org.junit.Test; public class test01 { public static void main(String[] args) { } @Test public void getAllProperty() throws Exception{ //Introspector 内省类 BeanInfo beanInfo = Introspector.getBeanInfo(Person.class); //获取所有属性描述器 PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors(); for (PropertyDescriptor propertyDescriptor : propertyDescriptors) { System.out.println(propertyDescriptor.getReadMethod()); //get方法 } } @Test public void testProperty() throws Exception{ Person p=new Person(); //属性描述器 PropertyDescriptor propertyDescriptor = new PropertyDescriptor(&amp;quot;name&amp;quot;, Person.class); //获取属性对应的get或set方法设置或者获取属性 Method writeMethod = propertyDescriptor.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/1/lua/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/1/lua/</guid>
-      <description> lua </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/1/pojie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/1/pojie/</guid>
-      <description> pojie 脱壳 去广告 1. 工具 1. C32ASM 2. Restorator 2009 3. ProcMon 4. ProcExp 查看那个窗口属于哪个进程  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/1/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/1/test/</guid>
-      <description> Table of Contents  我是主题  
-我是主题 我是正文
- 我是列表1 2 3  </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/1/xpath/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/1/xpath/</guid>
-      <description>导包 pip3 install lxml from lxml import etree 定位  通过id定位 xpat=&amp;ldquo;//a[@id=&amp;lsquo;xxx&amp;rsquo;]&amp;rdquo; 通过属性定位 xpath=&amp;ldquo;//a[@name=&amp;ldquo;]&amp;rdquo; 多个条件 xpath=&amp;ldquo;//a[@type=&amp;rdquo; and @name=&amp;ldquo;]&amp;rdquo; text()方法定位 xpath=&amp;ldquo;//a[text()=&amp;ldquo;]&amp;rdquo; 模糊定位 xpath=&amp;ldquo;//a[contains(@属性，&amp;rsquo;属性值&amp;rsquo;)]&amp;rdquo; 获取指定属性的属性值 xpath(&amp;lsquo;//input[@name=&amp;ldquo;SERVERTYPE&amp;rdquo;]&amp;lsquo;) 获取a标签中href中的值 html.xpath(&amp;lsquo;//li/a//@href&amp;rsquo;)   多线程 from concurrent.futures import ThreadPoolExecutor ProcessPoolExecutor 1. map python from concurrent import futures urls=[1,2,3,4,5] def downloads(urls): print(&amp;quot;正在下载......&amp;quot;) return &amp;quot;ok&amp;quot; with futures.ThreadPoolExecutor(10) as ex: res=ex.map(downloads,urls) for i in res: print(i) 
- 带回调函数
-t.submit(get_page, url).add_done_callback(parse_page)
-from concurrent import futures urls=[1,2,3,4,5] def downloads(urls): print(&amp;quot;正在下载.</description>
     </item>
     
   </channel>

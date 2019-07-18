@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>记事本 on LeaveIt</title>
+    <link>https://example.com/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/</link>
+    <description>Recent content in 记事本 on LeaveIt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Jul 2018 12:38:10 +0800</lastBuildDate>
+    
+	<atom:link href="https://example.com/categories/%E8%AE%B0%E4%BA%8B%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Mode</title>
+      <link>https://example.com/2018/markdown-mode/</link>
+      <pubDate>Sun, 29 Jul 2018 12:38:10 +0800</pubDate>
+      
+      <guid>https://example.com/2018/markdown-mode/</guid>
+      <description> 用法 链接和图像 链接 markdown-mode
+## 文字样式 ## 斜体 加粗 内联代码 标签
+ 引用代码块 C-c C-s q
+ 1 柱脚
+ haha [return]   </description>
+    </item>
+    
+    <item>
+      <title>sublime</title>
+      <link>https://example.com/2018/sublime/</link>
+      <pubDate>Tue, 19 Jun 2018 20:27:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/sublime/</guid>
+      <description>sublime ctrl+~ 复制 import urllib.request,os; pf = &amp;lsquo;Package Control.sublime-package&amp;rsquo;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &amp;lsquo;wb&amp;rsquo;).write(urllib.request.urlopen( &amp;lsquo;http://sublime.wbond.net/&#39; + pf.replace(&amp;rsquo; &amp;lsquo;,&amp;rsquo;%20&amp;rsquo;)).read())
+package control 官网推荐 import urllib.request,os,hashlib; h = &amp;lsquo;6f4c264a24d933ce70df5dedcf1dcaee&amp;rsquo; + &amp;lsquo;ebe013ee18cced0ef93d5f746d80ef60&amp;rsquo;; pf = &amp;lsquo;Package Control.sublime-package&amp;rsquo;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &amp;lsquo;http://packagecontrol.io/&#39; + pf.replace(&amp;rsquo; &amp;lsquo;, &amp;lsquo;%20&amp;rsquo;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&amp;lsquo;Error validating download (got %s instead of %s), please try manual install&amp;rsquo; % (dh, h)) if dh !</description>
+    </item>
+    
+    <item>
+      <title>Sublime2</title>
+      <link>https://example.com/2018/sublime2/</link>
+      <pubDate>Tue, 19 Jun 2018 20:36:56 +0800</pubDate>
+      
+      <guid>https://example.com/2018/sublime2/</guid>
+      <description>sublime ctrl+~ 复制 import urllib.request,os; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), &#39;wb&#39;).write(urllib.request.urlopen( &#39;http://sublime.wbond.net/&#39; + pf.replace(&#39; &#39;,&#39;%20&#39;)).read()) package control 官网推荐 import urllib.request,os,hashlib; h = &#39;6f4c264a24d933ce70df5dedcf1dcaee&#39; + &#39;ebe013ee18cced0ef93d5f746d80ef60&#39;; pf = &#39;Package Control.sublime-package&#39;; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( &#39;http://packagecontrol.io/&#39; + pf.replace(&#39; &#39;, &#39;%20&#39;)).read(); dh = hashlib.sha256(by).hexdigest(); print(&#39;Error validating download (got %s instead of %s), please try manual install&#39; % (dh, h)) if dh !</description>
+    </item>
+    
+  </channel>
+</rss>

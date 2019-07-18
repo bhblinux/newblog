@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>c on LeaveIt</title>
+    <link>https://example.com/tags/c/</link>
+    <description>Recent content in c on LeaveIt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 May 2018 19:58:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows的库</title>
+      <link>https://example.com/2018/windows%E7%9A%84%E5%BA%93/</link>
+      <pubDate>Tue, 08 May 2018 19:58:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/windows%E7%9A%84%E5%BA%93/</guid>
+      <description> 静态库 - 扩展名lib文件,是不能被加载的程序,  动态库 - 扩展名dll的文件,可以被应用程序加载  </description>
+    </item>
+    
+    <item>
+      <title>按钮</title>
+      <link>https://example.com/2018/%E6%8C%89%E9%92%AE/</link>
+      <pubDate>Sun, 06 May 2018 12:01:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E6%8C%89%E9%92%AE/</guid>
+      <description>分类  下压式按钮 PUSHBUTTON  正常下压式按钮 BS_PUSHBUTTON 三态式按钮 BS_3STATE|BS_AUTO3STATE  分组式按钮  BS_GROUPBOX  多选按钮 check box  BS_CHECKBOX|BS_AUTOCHECKBOX  点选按钮 Radio Box  BS_RADIOBUTTON|BS_AUTORADIOBUTTON    使用 下压式按钮的使用  创建按钮 相应按钮消息 WM_COMMAND  BN_CLICKED 消息,当点击按钮通过WM_COMMAND通知父窗口    通知消息 SenMessge  分组按钮  常用于对窗口内空间划分区域  多选按钮  创建使用BS_CHECKBOX|BS_AUTOCHECKBOX  BS_AUTOCHECKBOX 选择状态系统自动维护  命令响应 -BN_CLICKED 同桌wm_command消息 通知消息  BM_GETCHECK 获取当前按钮被选择的状态 BM_SETCHECK 设置当前按钮被选择的状态,wParam用于设置状态    单选按钮  创建使用BS_RADIOBUTTON|BS_AUTORADIBUTTON 可以通过WS_GROUP将单选分组  #include&amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>头文件</title>
+      <link>https://example.com/2018/%E5%A4%B4%E6%96%87%E4%BB%B6/</link>
+      <pubDate>Tue, 01 May 2018 19:49:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E5%A4%B4%E6%96%87%E4%BB%B6/</guid>
+      <description>全局变量重复定义，fatal error LNK1169: 找到一个或多个多重定义的符号 1.在GlobeValue.h中定义了一个变量：
+char gl_UID[256];
+2.在b.cpp和e.cpp中分别引用GlobeValue.h,并且使用gl_UID的全局变量，
+结果出现：fatal error LNK1169: 找到一个或多个多重定义的符号 的错误。
+错误的原因：因为在gl_UID全局变量是在GlobeValue.h中定义的，所以呢，每次包含一次这个头文件时，相当于又定义了一个这样的变量。
+正确的代码书写方法是： 在GlobeValue.h中使用extern char gl_UID,申明这个变量，在b.cpp中定义这个变量char gl_UID[256]，在e.cpp中不需要定义。这样，每次包含这个头文件，遇到extern时，编译器就知道在别处存在这个变量了，就不会重新定义了。</description>
+    </item>
+    
+    <item>
+      <title>win32</title>
+      <link>https://example.com/2018/win32/</link>
+      <pubDate>Tue, 01 May 2018 18:47:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/win32/</guid>
+      <description>窗口注册和创建  WinMain入口函数的定义 windowProc函数的定义 注册窗口类 RegisterClass|RegisterClassEx 窗口创建 CreateWindow/CreateWindowEx 窗口的显示和刷新ShowWindow|UpdateWindow 消息处理 GetMessage|DispatchMessage 窗口退出 WM_DESTROY|PostQuitMessage  窗口的注册  窗口类的分类
+ 系统全局的窗口类,比如按钮,文本,编辑框,直接使用,不需要注册 应用程序的全局窗口类,可以在exe和dll中使用的窗口类, 局部窗口类,只能在本模块中使用的窗口类   实现窗口类的注册
+ 系统全局的窗口类,直接使用 应用程序的全局窗口,注册时需要增加CS_GLOBALCLASS定义方式WNDCLASS wc{0}; wc.style=CS_GLOBALCLASS; RegisterClass(&amp;amp;wc); 局部窗口类,不能增加CS_GLOBALCLASS定义   typedef struct _WNDCLASSEX { UINT cbSize; //结构体的大小 UINT style; WNDPROC lpfnWndProc; int cbClsExtra; int cbWndExtra; HANDLE hInstance; HICON hIcon; HCURSOR hCursor; HBRUSH hbrBackground; LPCTSTR lpszMenuName; LPCTSTR lpszClassName; HICON hIconSm; } WNDCLASSEX;  窗口类的风格  CS_HREDRAW 窗口水平变化,重新绘制窗口 CS_VREDRAW 窗口垂直变化,重新绘制窗口 CS_GLOBALCLASS 创建应用程序全局窗口类 CS_DBCLICK 窗口可以接受鼠标双击消息 CS_CLASSDC 所有这种类型的窗口使用同一个dc(输出设备) CS_OWNDC 每个窗口拥有自己的dc CS_PARENTDC 使用父窗口的dc CS_NOCLOSE 禁止关闭命令没有小红X  窗口类的附加数据  在窗口类的数据信息中添加自己信息, cbClsExtra用于添加信息的内存大小 SetClassLong 将信息保存到内存中 GetClassLong 将信息从内存中取出  窗口的附加数据  在窗口的数据信息中添加自己信息, cbWndExtra用于添加信息的内存大小 SetWindowLong 将信息保存到内存中 GetWindowLong 将信息从内存中取出  窗口类的相关函数  RegisterClass|RegisterClassEX 注册 UnregisterClass 注销 GetClassInfo|GetClassInfoEx 获取信息 GetClassName 获取窗口的窗口类名称 GetClassLong|SetClasslONG 附加数据的设置和获取 GetWindowLong|SetWinodwLong 窗口的附加数据设置和获取  创建窗口时如何定位窗口类  先查找应用程序局部的窗口类 如果找到了名称一致的窗口类,会比较HINSTANCE句柄,如果相等,就使用找到的窗口类的信息创建窗口,如果不同,继续查找 如果为找到名称一致的窗口类,会继续在应用程序全局窗口类中查找执行4,否则执行5 全局窗口类找到一致的,使用找到的窗口类信息创建窗口 没找到,会去系统的全局窗口类中查找,找到创建窗口,找不到返回null  窗口创建 函数  CreateWindowEx|CreateWindow  HWND CreateWindowEx( DWORD dwExStyle, // 扩展样式 LPCTSTR lpClassName, // pointer to registered class name LPCTSTR lpWindowName, // pointer to window name DWORD dwStyle, // window style int x, // horizontal position of window int y, // vertical position of window int nWidth, // window width int nHeight, // window height HWND hWndParent, // handle to parent or owner window HMENU hMenu, // handle to menu, or child-window identifier HINSTANCE hInstance, // handle to application instance LPVOID lpParam // pointer to window-creation data );   窗口风格和扩展风格  窗口风格 ws_xxx 扩展风格 WS_EX_XXX WS_OVERLAPPED 窗口,层叠窗口 WS_POPUP 弹出式窗口 WS_CHILD 子窗口  父窗口和子窗口  WS_CHILD,将窗口的风格 CreateWindow时,可以指定父窗口指定父窗口 SetParent 设置父窗口  MDI窗口的创建  创建主窗口 MDICLIENT窗口 创建一个MDI子窗口  #include &amp;lt;stdio.</description>
+    </item>
+    
+    <item>
+      <title>字符编码</title>
+      <link>https://example.com/2018/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</link>
+      <pubDate>Sun, 29 Apr 2018 17:13:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</guid>
+      <description>编码  ASCII 0-127 7为表示 ASCII 扩展码 0-255 8位表示,代码页:通过代码页来切换对应的字符 双字节字符集 DBCS,使用一个或2个字节表示字符
+A中B国 1 2 1 2 A:0X41 中:0x5051 B:0X42 国 0x5253 1 2 3 4 5 6 0x41 0x50 0x51 0x42 0x52 0x53  Unicode 编码
+ 全部使用2个字节表示字符,内存/硬盘等资源占用变大
+A 中 B 国 2 2 2 2 A:0X0041 中:0x5051 B:0X0042 国 0x5253 1 2 3 4 5 6 7 8 0x00 0x41 0x50 0x51 0x00 0x42 0x52 0x53    C语言和编码  单字节的字符和字符串  char cText=&#39;A&#39;; char *pszText=&amp;quot;abcd&amp;quot;;   双字节的字符|宽字节  //双字节字符 void C_wchar() { wchar_t cText=&#39;A&#39;; wchar_t *pszText=L&amp;quot;abcd&amp;quot;; //打印宽字节 wprintf(L&amp;quot;%s\n&amp;quot;,pszText); //获取宽字节长度 int nlen=wcslen(pszText); printf(&amp;quot;%d\n&amp;quot;,nlen); }   相关函数</description>
+    </item>
+    
+    <item>
+      <title>QT5</title>
+      <link>https://example.com/2018/qt/</link>
+      <pubDate>Fri, 27 Apr 2018 22:09:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/qt/</guid>
+      <description>hello hello.pro SOURCES += \ hello.cpp QT+=widgets gui main.cpp /*应用程序抽象类*/ #include&amp;lt;QApplication&amp;gt; /*窗口类*/ #include&amp;lt;QWidget&amp;gt; int main(int argc,char *argv[]){ QApplication app(argc,argv); QWidget w; w.setWindowTitle(&amp;quot;hello world&amp;quot;); w.show(); /*exec 中有一个消息循环*/ return app.exec(); }  手动编译qt文件 main.cpp #include&amp;lt;QApplication&amp;gt; #include&amp;lt;QLabel&amp;gt; int main(int argc,char **argv){ QApplication app(argc,argv); QLabel *label=new QLabel; label-&amp;gt;setText(&amp;quot;hello qt&amp;quot;); label-&amp;gt;show(); return app.exec(); } 找到qt里面的 MinGW 4.8 (32-bit) Qt 5.2.0 for Desktop (MinGW 4.8 32 bit) 控制台 1. D:\Workspaces\QT\day0429\demo01&amp;gt;qmake -project 生成 demo01.pro 包 2 D:\Workspaces\QT\day0429\demo01&amp;gt;qmake 生成makefile 3.</description>
+    </item>
+    
+    <item>
+      <title>对话框</title>
+      <link>https://example.com/2018/%E5%AF%B9%E8%AF%9D%E6%A1%86/</link>
+      <pubDate>Thu, 26 Apr 2018 20:21:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E5%AF%B9%E8%AF%9D%E6%A1%86/</guid>
+      <description> 分类  无模式的对话框  对话框显示后,不影响其他窗口的使用 2. 有模式的对话框
+对话框显示后,会将其他窗口禁止输入操作
+1. 添加对话框资源 2. 定义对话框窗口处理函数 3. 创建对话框 4. 关闭对话框  使用方式  对话框的窗口处理函数 注册窗口(可选) 创建对话框 4.关闭对话框  对话框资源 </description>
+    </item>
+    
+    <item>
+      <title>位图</title>
+      <link>https://example.com/2018/%E4%BD%8D%E5%9B%BE/</link>
+      <pubDate>Thu, 26 Apr 2018 19:53:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E4%BD%8D%E5%9B%BE/</guid>
+      <description> 位图 位图的使用  加载位图 创建放置位图的dc 将位图放入创建的dc中 绘制位图到当前dc中 取出位图 删除创建的位图 删除位图  </description>
+    </item>
+    
+    <item>
+      <title>绘图</title>
+      <link>https://example.com/2018/%E7%BB%98%E5%9B%BE/</link>
+      <pubDate>Mon, 23 Apr 2018 22:21:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E7%BB%98%E5%9B%BE/</guid>
+      <description>绘图 图形绘制  图形绘图的方式,获取到绘图句柄,设备描述表(DC),使用相应的绘图的api,  颜色 RGB三色,每种颜色8位,24位颜色
+32位颜色:颜色数量24位颜色,多出来的8位,表示一个灰度
+16位颜色:556表示的方式,颜色的数量2的16次方
+Win32下 颜色的定义 COLORREF(DWORD)
+COLORREF nColor=RGB(0,0,0);
+COLORREF nColor=RGB(255,255,255);
+从一个颜色重获取RGB三色
+int nBlue=GetBValue(nColor);
+点的绘制和获取 绘制 COLORREF SetPixel( HDC hdc, // Dc的句柄 int X, // x坐标 int Y, // y坐标 COLORREF crColor // 颜色 ); 获取 COLORREF GetPixel( HDC hdc, // handle to device context int XPos, // x-coordinate of pixel int nYPos // y-coordinate of pixel ); void DrawPixel(HDC hDC){ COLORREF nColor=RGB(255,0,0); SetPixel(hDC,100,100,nColor); } void GetPixelColor(HDC hDC) { COLORREF nColor=GetPixel(hDC,100,100); int nRed=GetRValue(nColor); int nGreen=GetGValue(nColor); int nBlue=GetBValue(nColor); CHAR szText[200]={0}; sprintf(szText,&amp;quot;%d %d %d&amp;quot;,nRed,nGreen,nBlue); PrintLogln(szText); }  线的绘制  MoveToEx 移动当前起始点到制定位置 LineTo 绘制执行到制定位置  void DrawLine(HDC hDC){ MoveToEx(hDC,0,0,NULL); LineTo(hDC,500,500); }  弧形 BOOL AngleArc( HDC hdc, // handle to device context int X, // x-coordinate of circle&#39;s center int Y, // y-coordinate of circle&#39;s center DWORD dwRadius, // circle&#39;s radius 圆的半径 FLOAT eStartAngle, // arc&#39;s start angle 开始角度 FLOAT eSweepAngle // arc&#39;s sweep angle 夹角 ); 设置开始会圆的方向 int SetArcDirection( HDC hdc, // handle to the device context int ArcDirection // specifies the new arc direction ); BOOL Arc( HDC hdc, // handle to device context int nLeftRect, // 外切矩形左上x坐标 int nTopRect, // 外切矩形左上y坐标 int nRightRect, // 外切矩形右下x坐标 int nBottomRect, // 外切矩形右下y坐标 int nXStartArc, // 圆心到弧左边或右边的直线的点 int nYStartArc, // 圆心到弧左边或右边的直线的点 int nXEndArc, // 圆心到弧左边或右边的直线的点 int nYEndArc //圆心到弧左边或右边的直线的点 ); void DrawARC(HDC hDC){ SetArcDirection(hDC,AD_CLOCKWISE); Arc(hDC,400,400,500,500,400,400,500,400); /*MoveToEx(hDC,200,200,NULL); AngleArc(hDC,200,200,100,60,120);*/ }  折线 PolyLine</description>
+    </item>
+    
+    <item>
+      <title>win32资源</title>
+      <link>https://example.com/2018/win32%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Sun, 22 Apr 2018 11:55:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/win32%E8%B5%84%E6%BA%90/</guid>
+      <description>资源文件 图标,光标,字符串,菜单,加速jm
+ICON 光标资源 #define _WIN32_WINNT 0x0400 //¹öÂÖÏûÏ¢±ØÐë¼ÓÔÚwindows.hÖ®Ç°¼Ó #include &amp;lt;windows.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;quot;resource.h&amp;quot; #define WM_FIRSTMSG (WM_USER+1)//×Ô¶¨ÒåÏûÏ¢ HINSTANCE g_hInst=NULL; HANDLE g_hStdOut=NULL; int g_nXPos,g_nYPos; int g_nX1Rect,g_nY1Rect; int g_nX2Rect,g_nY2Rect; void PrintLog(LPSTR pszLog){ WriteConsole(g_hStdOut,pszLog,strlen(pszLog),NULL,NULL); } void PrintLogln(LPSTR pszLog){ WriteConsole(g_hStdOut,pszLog,strlen(pszLog),NULL,NULL); WriteConsole(g_hStdOut,&amp;quot;\r\n&amp;quot;,strlen(&amp;quot;\r\n&amp;quot;),NULL,NULL); } BOOL OnSetCursor(HWND hWnd,UINT nMsg,WPARAM wParam,LPARAM lParam) { int nHitText=LOWORD(lParam); if(HTCLIENT!=nHitText){ return FALSE; } //获取窗口的客户区 RECT rcClient={0}; GetClientRect(hWnd,&amp;amp;rcClient); //获得当前光标的位置 POINT ptPos={0}; GetCursorPos(&amp;amp;ptPos); ScreenToClient(hWnd,&amp;amp;ptPos); //根据位置设置光标 HCURSOR hCursor=NULL; if(ptPos.x&amp;lt;rcClient.right/2){ if(ptPos.y&amp;lt;rcClient.bottom/2){ //左上 hCursor=LoadCursor(NULL,IDC_SIZEALL); }else{ //左下 hCursor=LoadCursor(NULL,IDC_HELP); } }else{ if(ptPos.</description>
+    </item>
+    
+    <item>
+      <title>Win32菜单</title>
+      <link>https://example.com/2018/win32%E5%9B%BE%E5%BD%A2/</link>
+      <pubDate>Sat, 21 Apr 2018 11:37:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/win32%E5%9B%BE%E5%BD%A2/</guid>
+      <description>菜单 菜单的使用  菜单的创建  菜单创建后,会返回HMENU句柄 - MENU 菜单 CreateMenu - POPUPMENU 弹出式菜单 CreatePopupMenu
+菜单项 每个菜单项会有一个id号,可以根据这个id执行不同的参数 2. 菜单的使用 - CreateMenu
+- AppenedMenu 增加菜单项 ```c BOOL WINAPI AppendMenu(  In HMENU hMenu, In UINT uFlags, In UINT_PTR uIDNewItem, _Inopt LPCTSTR lpNewItem ); ``` - CreatePopupMenu
+#define _WIN32_WINNT 0x0400 //¹öÂÖÏûÏ¢±ØÐë¼ÓÔÚwindows.hÖ®Ç°¼Ó #include &amp;lt;windows.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #define WM_FIRSTMSG (WM_USER+1)//×Ô¶¨ÒåÏûÏ¢ HINSTANCE g_hInst=NULL; HANDLE g_hStdOut=NULL; int g_nXPos,g_nYPos; int g_nX1Rect,g_nY1Rect; int g_nX2Rect,g_nY2Rect; BOOL OnSysCommand(HWND hWnd,UINT nMsg,WPARAM wParam,LPARAM lParam){ switch(wParam) { case SC_CLOSE: if(IDOK==MessageBox(NULL,&amp;quot;ÊÇ·ñ½«ÎÄ¼þ´æÅÌ&amp;quot;,&amp;quot;OnSysCommand&amp;quot;,MB_OKCANCEL|MB_ICONWARNING)){ return TRUE; }else{ return FALSE; } break; } } void PrintLog(LPSTR pszLog){ WriteConsole(g_hStdOut,pszLog,strlen(pszLog),NULL,NULL); } void PrintLogln(LPSTR pszLog){ WriteConsole(g_hStdOut,pszLog,strlen(pszLog),NULL,NULL); WriteConsole(g_hStdOut,&amp;quot;\r\n&amp;quot;,strlen(&amp;quot;\r\n&amp;quot;),NULL,NULL); } void OnCreater(HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam) { HMENU hMenu=CreateMenu(); HMENU hFileMenu=CreatePopupMenu(); AppendMenu(hFileMenu,MF_STRING|MF_CHECKED,1001,&amp;quot;新建(&amp;amp;N)&amp;quot;); //分割线 AppendMenu(hFileMenu,MF_SEPARATOR,0,NULL); AppendMenu(hFileMenu,MF_STRING,1002,&amp;quot;退出(&amp;amp;Q)&amp;quot;); AppendMenu(hMenu,MF_STRING|MF_POPUP,(UINT)hFileMenu,&amp;quot;文件(&amp;amp;F)&amp;quot;); //快捷键alt+f HMENU hEditMenu=CreatePopupMenu(); AppendMenu(hEditMenu,MF_STRING,1003,&amp;quot;剪切(&amp;amp;x)&amp;quot;); AppendMenu(hEditMenu,MF_STRING,1004,&amp;quot;拷贝(&amp;amp;C)&amp;quot;); AppendMenu(hEditMenu,MF_STRING,1005,&amp;quot;粘贴(&amp;amp;v)&amp;quot;); AppendMenu(hMenu,MF_STRING|MF_POPUP,(UINT)hEditMenu,&amp;quot;编辑(&amp;amp;E)&amp;quot;); HMENU hHelpMenu=CreatePopupMenu(); AppendMenu(hHelpMenu,MF_STRING,1006,&amp;quot;关于(&amp;amp;A)&amp;quot;); AppendMenu(hMenu,MF_STRING|MF_POPUP,(UINT)hHelpMenu,&amp;quot;帮助(&amp;amp;H)&amp;quot;); SetMenu(hWnd,hMenu); } LRESULT CALLBACK WndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam ) { switch (nMsg) { case WM_CREATE: OnCreater(hWnd,nMsg,wParam,lParam); break; case WM_DESTROY: PostQuitMessage(0); //wm_quit return 0; } return DefWindowProc(hWnd,nMsg,wParam,lParam); } BOOL RegisterWnd(LPSTR pszClassName){ WNDCLASSEX wce ={0}; wce.</description>
+    </item>
+    
+    <item>
+      <title>Win32消息机制</title>
+      <link>https://example.com/2018/win32%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Mon, 16 Apr 2018 22:26:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/win32%E6%B6%88%E6%81%AF%E6%9C%BA%E5%88%B6/</guid>
+      <description>消息机制 过程驱动  程序是安装我们预定好的顺序执行
+事件驱动 程序的执行顺序是无序的,某个时间点所执行的代码,是由外界通知
+ win32的消息机制,就是事件驱动
+win32消息程序 win32窗口注册 win32窗口创建 win32消息循环 GetMessage  BOOL GetMessage（LPMSG lpMsg，//存放获取到的消息数据 HWND hWnd， //获取消息的窗口句柄 UINT wMsgFilterMin，//消息过滤的起始消息 UINT wMsgFilterMax); //消息过滤的终止消息 返回值BOOL:成功获取消息,返回TRUE, 当获取WM_QUIT消息时,返回fase switch (nMsg) { case:WM_DESTROY://窗口销毁时的消息 PostQuitMessage(0); //wm_quit return 0; } MSG - 由系统填写 hWnd - 接收由hWnd指定的窗口的消息  TranslateMessage  将键盘消息转换成字符消息 首先检查是否为键盘按键消息 如果发现是键盘按键消息,将会根据按键产生一个字符消息,在下一个GetMessage执行之前,会收到这个消息 如果未发现,不做处理  DispatchMessage  根据消息数据内窗口句柄,找到这个窗口的处理函数,并调用,进行消息处理 如果msg中,hwnd窗口句柄为空,则不做处理 ```c //消息处理函数 LRESULT CALLBACK WndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lParam ) { switch (nMsg) { case:WM_DESTROY://窗口销毁时的消息 PostQuitMessage(0); //wm_quit return 0; }  	//使用系统函数处理我们未处理的消息类型 return DefWindowProc(hWnd,nMsg,wParam,lParam);</description>
+    </item>
+    
+  </channel>
+</rss>

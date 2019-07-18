@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on LeaveIt</title>
+    <link>https://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on LeaveIt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 May 2018 19:57:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JDBC</title>
+      <link>https://example.com/2018/jdbc/</link>
+      <pubDate>Sat, 12 May 2018 19:57:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/jdbc/</guid>
+      <description>连接  导包 mysql-connector-java-5.1.7-bin.jar 连接高版本mysql数据库，而驱动版本比较低则需要凑单jdbcurl中加入 字符集 jdbc:mysql:///day06?characterEncoding=utf-8 方法一  package com.yonyou; import java.sql.Connection; import java.sql.Driver; import java.sql.SQLException; import java.util.Properties; import org.junit.Test; /* * jdbc数据连接 * 导包 mysql-connector-java-5.1.7-bin.jar */ public class demo01 { //连接数据url private String url=&amp;quot;jdbc:mysql://localhost:3306/day0508&amp;quot;; @Test public void test01(){ //1.创建驱动程序对象 Driver driver=null; Properties properties = new Properties(); properties.setProperty(&amp;quot;user&amp;quot;, &amp;quot;root&amp;quot;); properties.setProperty(&amp;quot;password&amp;quot;, &amp;quot;admin&amp;quot;); //2.连接数据库 try { driver=new com.mysql.jdbc.Driver(); Connection connect = driver.connect(url, properties); System.out.println(connect); } catch (SQLException e) { e.printStackTrace(); } } }   方法二  @Test public void test03(){ try { Class.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on LeaveIt</title>
+    <link>https://example.com/tags/java/</link>
+    <description>Recent content in java on LeaveIt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Jul 2018 22:24:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://example.com/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java2</title>
+      <link>https://example.com/2018/java2/</link>
+      <pubDate>Mon, 30 Jul 2018 22:24:16 +0800</pubDate>
+      
+      <guid>https://example.com/2018/java2/</guid>
+      <description> java基础 代码块 构造代码块  将代码块写在类中 构造代码块优先构造方法  静态代码块 static{ } 优先构造代码块,只执行一次  </description>
+    </item>
+    
+    <item>
+      <title>Java基础</title>
+      <link>https://example.com/2018/java/</link>
+      <pubDate>Sat, 28 Jul 2018 13:16:19 +0800</pubDate>
+      
+      <guid>https://example.com/2018/java/</guid>
+      <description>Table of Contents  基础  数据类型  面向对象  封装 继承 多态 String类  设计模式  共享设计模式 关系映射 代码块   org-mode
+
+基础 
+数据类型 :重点: 选择数据类型原则
+ 整数用 int 小数用 double 如果描述日期数字或者表示文件大小使用 long 如果实现内容传递或者是编码转换使用 =byte =  
+面向对象 
+封装 构造方法
+ 在 new 的时候只会被调用一次 普通方法可以随意调用  匿名对象
+ 没有名字的对象,能用一次  
+继承 
+多态 
+String类 相关方法 构造方法
+ String(byte[] bytes): 将字符数组转成字符串 String(byte[] bytes, int offset, int length) String(byte[] bytes) : 通过使用平台的默认字符集解码指定的 byte 数组，构造一个新的 String。 String(byte[] bytes, Charset charset) : 通过使用指定的 charset 解码指定的 byte 数组，构造一个新的 String。 String(byte[] bytes, int offset, int length) : 通过使用平台的默认字符集解码指定的 byte 子数组，构造一个新的 String。 String(byte[] bytes, int offset, int length, Charset charset) : 通过使用指定的 charset 解码指定的 byte 子数组，构造一个新的 String。  普通方法</description>
+    </item>
+    
+    <item>
+      <title>JSTL</title>
+      <link>https://example.com/2018/jstl/</link>
+      <pubDate>Fri, 25 May 2018 23:15:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/jstl/</guid>
+      <description>定义标签 传统标签  写一个类实现tag接口 写一个tld文件,描述写好的类 在jsp页面引用tld文件并使用  简单标签  写一个类实现SimpleTag接口(继承SimpleTag接口的默认实现类SimpleTagSupport) 写一个tld文件,描述写好的类 在jsp页面中引入tld文件,就可以在jsp页面中使用自定义标签了  package com.yonyou; import java.io.IOException; import java.io.StringWriter; import javax.servlet.jsp.JspException; import javax.servlet.jsp.SkipPageException; import javax.servlet.jsp.tagext.JspFragment; import javax.servlet.jsp.tagext.SimpleTagSupport; public class demo02 extends SimpleTagSupport { @Override public void doTag() throws JspException, IOException { /* 控制标签体是否执行&amp;lt;c:if&amp;gt; //控制标签提不执行 ,什么都不做,就不执行 //控制标签执行*/ //JspFragment jspBody2 = getJspBody(); //jspBody2.invoke(getJspContext().getOut()); //jspBody2.invoke(null);//null则跟上面一样 //控制标签之后的内容是否执行 //什么在不做,标签后面的就会执行 //控制便签后面的内容不执行抛出SkipPageException异常 //throw new SkipPageException(); //控制标签体重复执行&amp;lt;c:foreach&amp;gt; //	for(int i=0;i&amp;lt;4;i++){ //	getJspBody().invoke(null); //	} // 修改标签体后输出&amp;lt;c:out&amp;gt; StringWriter stringWriter = new StringWriter(); JspFragment jspBody2 = getJspBody(); jspBody2.</description>
+    </item>
+    
+    <item>
+      <title>DBUTILs</title>
+      <link>https://example.com/2018/dbutils/</link>
+      <pubDate>Mon, 14 May 2018 21:21:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/dbutils/</guid>
+      <description>元数据  DatabaseMetaData ParameterMetaData ?generateSimpleParameterMetadata=true ResultSetMetaData  DBUtils  DbUtils QueryRunner 两行代码搞定增删改查  QueryRunner() &amp;ndash;需要控制事务时,使用这组方法 QueryRunner(DataSource ds) &amp;ndash;不需要控制事务用这组方法    import java.sql.SQLException; import org.apache.commons.dbutils.DbUtils; import org.apache.commons.dbutils.QueryRunner; import org.junit.Test; import com.mchange.v2.c3p0.ComboPooledDataSource; public class demo04 { @Test public void test01() throws SQLException{ QueryRunner runner=new QueryRunner(new ComboPooledDataSource()); runner.update(&amp;quot;update dept set deptname=? where id =?&amp;quot;, &amp;quot;bb&amp;quot;,4); } } for (User u:query ) { System.out.println(u); } } catch (SQLException e) { e.printStackTrace(); } } @Test public void test5() throws SQLException { QueryRunner queryRunner = new QueryRunner(new ComboPooledDataSource()); //返回结果及中的第一行指定列的值，单个查询 Object query = queryRunner.</description>
+    </item>
+    
+    <item>
+      <title>Mysql</title>
+      <link>https://example.com/2018/mysql/</link>
+      <pubDate>Tue, 08 May 2018 22:07:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/mysql/</guid>
+      <description>命令 数据库管理  链接数据库 mysql -u root -p
+ 查看数据库 mysql&amp;gt; show databases;
+ 创建数据库 mysql&amp;gt; create database day0508; mysql&amp;gt; create database day050801 -&amp;gt; default character set utf8;
+ 删除数据库 mysql&amp;gt; drop database day050801;
+ 查看数据库的默认字符集 mysql&amp;gt; show create database day0508;
+ 修改数据库的默认字符集 mysql&amp;gt; alter database day0508 default character set gbk;
+ 使用数据库 mysql&amp;gt; use day0508;
+表的操作 查看表 mysql&amp;gt; show tables;
+ 创建表 mysql&amp;gt; create table student( -&amp;gt; sid int , -&amp;gt; sname varchar(20), -&amp;gt; sage int);</description>
+    </item>
+    
+    <item>
+      <title>JSP</title>
+      <link>https://example.com/2018/jsp/</link>
+      <pubDate>Tue, 01 May 2018 15:41:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/jsp/</guid>
+      <description>特点  jsp运行必须交给tomcat服务器 ,tomcat的work目录,存放jsp运行时的临时文件  执行过程  tomcat扫描jsp文件在work目录包jsp文件翻译成java源文件. tomcat服务器会把java源文件编程成字节码文件 返回构造类对象 调用相应方法  jsp语法  jsp模板 表达式  &amp;lt;%=变量或表达式%&amp;gt; 输出表达式的结果或值   脚本  &amp;lt;% java 代码 %&amp;gt;   声明 注释 jsp指令  include    原理是吧被包含的页面内容反映到包含页面中,合并成翻译成一个java源文件,再编译运行,这种包含叫静态包含
+如果使用静态包含,被包含页面中不需要出现全局的html标签
+&amp;lt;%@include file=&amp;quot;&amp;quot; %&amp;gt;   taglib page   告诉tomcat服务器如何翻译jsp文件
+&amp;lt;%@ page language=&amp;quot;java&amp;quot; 用java语言翻译 import &amp;quot;java.util.*&amp;quot; 导包,多个用逗号分隔 pageEncodeing=&amp;quot;utf-8&amp;quot; 使用服务器用什么编码翻译 contentType=&amp;quot;text/html;charset=utf-8&amp;quot; 服务器发送浏览器的数据类型和编码 errorPage=&amp;quot;error.jsp&amp;quot; isErrorPage=&amp;quot;false&amp;quot; buffer=&amp;quot;8kb&amp;quot; session=&amp;quot;true&amp;quot; isELIgnored=&amp;quot;false&amp;quot; %&amp;gt;   taglib 指令  ### jsp内置对象</description>
+    </item>
+    
+    <item>
+      <title>servlet</title>
+      <link>https://example.com/2018/servlet/</link>
+      <pubDate>Mon, 30 Apr 2018 10:27:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/servlet/</guid>
+      <description>生命周期  输入url,会在应用目录的web.xml中查找是否有匹配的url-pattern的内容 如果找到匹配的url-pattern,则使用当前的servlet-name的名称到web.xml文件中查找是否相同的servlet配置,如果没有匹配到,则交给defalutservlet处理 如果找到,则取出相对应的serlvert配置信息中的servlet-class 内容,然后通过反射创建对象,并调用相关方法  生命周期 servlet程序是有tomcat服务器控制
+ 构造方法:创建servlet对象的时候调用,第一次访问,servlet的时候创建servlet对象,会调用有参的,只调用1次, init方法:创建完servlet对象的时候 ,只调用1次 service方法:每次发出请求时调用,每次请求调用一次 destroy:销毁serlvet对象的时候,停止服务器或者重新部署web应用的时候销毁servlet对象  web.xml匹配规则  精确匹配 /aa | /aa/bb 模糊匹配 /* | *.后缀 \ *.do  默认的 / 缺省servlet 解析web应用的静态资源文件 优先级 精确匹配 优先  servlet自动加载 在servlet的配置文件中加上load-on-startup即可
+域对象 HttpServletRequest 请求对象,获取请求信息
+HttpServletResponse 响应对象,设置响应对象
+ServletConfig servlet配置对象
+创建时机: 在创建完servlet对象后,在调用init方法之前创建
+得到对象:直接从有参数的init方法得到
+init-para要放在load-on-startup上边
+web.xml &amp;lt;init-param&amp;gt; &amp;lt;param-name&amp;gt;path&amp;lt;/param-name&amp;gt; &amp;lt;param-value&amp;gt;c:/1.txt&amp;lt;/param-value&amp;gt; &amp;lt;/init-param&amp;gt; &amp;lt;!-- 让servlet自动加载 &amp;lt;load-on-startup&amp;gt;1&amp;lt;/load-on-startup&amp;gt;--&amp;gt; String initParameter = config.getInitParameter(&amp;quot;path&amp;quot;); response.getWriter().write(initParameter);  ServletContext Servlet的上下文对象
+得到web应用路径: java.lang.String getContextPath() rqeust.</description>
+    </item>
+    
+    <item>
+      <title>tomcat</title>
+      <link>https://example.com/2018/tomcat/</link>
+      <pubDate>Fri, 27 Apr 2018 23:04:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/tomcat/</guid>
+      <description> 开发动态资源 静态资源和动态资源 Servlet  特点  普通的java类,继承HttpServlet类,覆盖doGet方法 Servlet类只能交给tomcat服务器运行 jar 包 servlet-api.jar    手动编写步骤    </description>
+    </item>
+    
+    <item>
+      <title>XML</title>
+      <link>https://example.com/2018/xml/</link>
+      <pubDate>Sun, 22 Apr 2018 22:14:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/xml/</guid>
+      <description>xml解析 解析工具 Dom解析工具
+ jaxp JDOM工具 DOM4J工具  SAX 解析
+ SAX解析工具,  节点信息: Node 节点名称 节点类型 nodeIterator 标签节点: Element 标签名 方法 1. getRootElement 2. elementIterator 3. elements 属性节点:Attribute 属性名称 属性值 方法: 1. contactEle.attributeValue(&amp;quot;id&amp;quot;); 2. contactEle.attribute(&amp;quot;id&amp;quot;); 3. contactEle.attributes(); 4. contactEle.attributeIterator() 文本节点: Text 文本内容 方法 1.doc.getRootElement().element(&amp;quot;contact&amp;quot;).element(&amp;quot;name&amp;quot;); 2. doc.getRootElement().element(&amp;quot;contact&amp;quot;).elementText(&amp;quot;name&amp;quot;);  DOM4J解析  导包  dom4j-1.6.1.jar
+ 获取Document文档  /*new File(&amp;quot;.&amp;quot;).getAbsolutePath() D:\Workspaces\MyEclipse 8.5\day0422\.*/ /* * 读取xml内容 */ package com.yonyou.demo01; import java.io.File; import java.</description>
+    </item>
+    
+    <item>
+      <title>路径问题</title>
+      <link>https://example.com/2018/%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Mon, 16 Apr 2018 22:12:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98/</guid>
+      <description> 当前路径 类文件路径  classpath路径  package com.yonyou.demo01; import java.io.File; import java.io.InputStream; public class test03 { public static void main(String[] args) { //获取类路径 InputStream resourceAsStream = test03.class.getResourceAsStream(&amp;quot;/&amp;quot;); // &amp;quot;/&amp;quot; 代表了classpath的路径 //获取当前路径 File file = new File(&amp;quot;.&amp;quot;); String absolutePath = file.getAbsolutePath(); System.out.println(absolutePath); } }  </description>
+    </item>
+    
+    <item>
+      <title>BenUtils</title>
+      <link>https://example.com/2018/benutils/</link>
+      <pubDate>Mon, 16 Apr 2018 21:30:00 +0000</pubDate>
+      
+      <guid>https://example.com/2018/benutils/</guid>
+      <description>内省 package com.yonyou.demo01; import java.beans.BeanInfo; import java.beans.IntrospectionException; import java.beans.Introspector; import java.beans.PropertyDescriptor; import java.lang.reflect.Method; import org.junit.Test; public class test01 { public static void main(String[] args) { } @Test public void getAllProperty() throws Exception{ //Introspector 内省类 BeanInfo beanInfo = Introspector.getBeanInfo(Person.class); //获取所有属性描述器 PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors(); for (PropertyDescriptor propertyDescriptor : propertyDescriptors) { System.out.println(propertyDescriptor.getReadMethod()); //get方法 } } @Test public void testProperty() throws Exception{ Person p=new Person(); //属性描述器 PropertyDescriptor propertyDescriptor = new PropertyDescriptor(&amp;quot;name&amp;quot;, Person.class); //获取属性对应的get或set方法设置或者获取属性 Method writeMethod = propertyDescriptor.</description>
+    </item>
+    
+  </channel>
+</rss>
