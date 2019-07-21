@@ -467,6 +467,15 @@ clearBatch
 - 导包
 	- commons-pool-1.5.6.jar
     - commons-dbcp-1.4.jar
+- 配置
+	- driverClassName 数据库驱动 *com.mysql.jdbc.Driver*
+	- url 数据库的地址 *jdbc:mysql:///day0916*
+	- useranme 用户名
+	- passworkd 密码
+	- maxActive 最大连接数量 
+	- minIdle 最小空闲连接 
+	- maxIdle 最大空闲连接 
+	- initialSize 初始化连接 
     
 ```java
 import java.sql.Connection;

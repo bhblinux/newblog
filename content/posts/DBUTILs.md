@@ -3,7 +3,7 @@ title: DBUTILs
 author: Bhblinux
 tags:
   - java
-categories: []
+categories: [编程]
 date: 2018-05-14 21:21:00
 ---
 ## 元数据
@@ -31,16 +31,10 @@ public class demo04 {
 		runner.update("update dept set deptname=? where id =?", "bb",4);
 	}
 }
-
-
-
-
             for (User u:query
                  ) {
                 System.out.println(u);
-
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         }
