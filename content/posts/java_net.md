@@ -5,17 +5,19 @@ draft: true
 tags: [java]
 categories: ["编程"]
 ---
-
+@[top]
 # net
 ## udp
 - UDP发送端
-    - 数据封装
-
-        java.net.DatagramPacket
-
-    - 数据传输
-
+    - 数据封装  
+        java.net.DatagramPacket  
+    - 数据传输  
         java.net.DatagramSocket
 
+- UDP接收端
+    - 数据封装  
+        java.net.DatagramPacket  
+    - 输出传输  
+        java.net.DatagramSocket  
 
 ## Tcp
